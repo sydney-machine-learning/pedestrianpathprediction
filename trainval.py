@@ -35,7 +35,7 @@ random.seed(0)
 
 def get_parser():
     parser = argparse.ArgumentParser(
-        description='STAR')
+        description='DDL')
     parser.add_argument('--dataset', default='eth5')
     parser.add_argument('--save_dir')
     parser.add_argument('--model_dir')
