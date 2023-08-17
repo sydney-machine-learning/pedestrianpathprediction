@@ -2,8 +2,8 @@
 Train and test script for our proposed method
 
 Author: Honghui Wang
+Date: 17th August 2023
 '''
-
 
 import argparse
 import ast
