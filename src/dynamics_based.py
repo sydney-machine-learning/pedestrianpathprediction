@@ -494,7 +494,7 @@ class DYNA(torch.nn.Module):
         attractor_grad_func = lambda y: F.normalize(y)
         attractor_grad = -attractor_grad_func(nodes_norm)
         predicted_velocity = torch.bmm(pd_matrix, attractor_grad.unsqueeze(2)).squeeze()
-        next_step = nodes_abs + predicted_velocity
+        next_step = nodes_abs + 0.4 * predicted_velocity
         return predicted_velocity, next_step
 
 
