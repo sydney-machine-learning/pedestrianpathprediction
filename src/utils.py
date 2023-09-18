@@ -421,7 +421,7 @@ class Trajectory_Dataloader():
             y_index = seq[:, 1] != 0
             coor_index = x_index | y_index
             seq_list[coor_index, pedi] = 1
-            velocity[:seq_length-1, pedi] = seq[1:] - seq[:seq_length-1] # Get the pedestrian walking velocity
+            velocity[:seq_length-1, pedi] = (seq[1:] - seq[:seq_length-1]) / 0.4 # Get the pedestrian walking velocity
 
         # get relative cords, neighbor id list
         nei_list = np.zeros((inputnodes.shape[0], num_Peds, num_Peds))
@@ -468,7 +468,7 @@ class Trajectory_Dataloader():
             cur_ped_v = np.zeros((seq_length, 2))
             for ped in range(num_ped):
                 seq = batch[:,ped]
-                cur_ped_v[:seq_length-1] = seq[1:] - seq[:seq_length-1]
+                cur_ped_v[:seq_length-1] = (seq[1:] - seq[:seq_length-1]) / 0.4
                 batch_velocity[:, ped] = cur_ped_v
 
 
