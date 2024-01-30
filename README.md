@@ -1,5 +1,5 @@
 # Description
-This is the code for [Pedestrian Trajectory Prediction Using Dynamics-based Deep Learning](https://arxiv.org/abs/2309.09021), which is under review.
+This is the code for [Pedestrian Trajectory Prediction Using Dynamics-based Deep Learning](https://arxiv.org/abs/2309.09021), which has been accepted by ICRA2024.
 
 If you find this code useful then please cite:
 ```bibtex
