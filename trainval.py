@@ -48,7 +48,7 @@ def get_parser():
     parser.add_argument('--phase', default='train', help='Set this value to \'train\' or \'test\'')
     parser.add_argument('--train_model', default='ddl', help='Your model name')
     parser.add_argument('--load_model', default=None, type=str, help="load pretrained model for test or training")
-    parser.add_argument('--model', default='star.STAR')
+    parser.add_argument('--model', default='ddl.DDL')
     parser.add_argument('--seq_length', default=20, type=int)
     parser.add_argument('--obs_length', default=8, type=int)
     parser.add_argument('--pred_length', default=12, type=int)
