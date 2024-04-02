@@ -46,7 +46,7 @@ def get_parser():
     parser.add_argument('--base_dir', default='.', help='Base directory including these scripts.')
     parser.add_argument('--save_base_dir', default='./output/', help='Directory for saving caches and models.')
     parser.add_argument('--phase', default='train', help='Set this value to \'train\' or \'test\'')
-    parser.add_argument('--train_model', default='star', help='Your model name')
+    parser.add_argument('--train_model', default='ddl', help='Your model name')
     parser.add_argument('--load_model', default=None, type=str, help="load pretrained model for test or training")
     parser.add_argument('--model', default='star.STAR')
     parser.add_argument('--seq_length', default=20, type=int)
