@@ -9,7 +9,7 @@ python trainval.py --test_set eth --load_model 50 --calculate_gradient True
 ```
 
 
-Or you can use IDE such as pycharm to modify --test_set in code manually:
+Or you can use IDE such as pycharm to modify in code manually:
 ```
 parser.add_argument('--test_set', default='eth', type=str,
                         help='Set this value to [eth, hotel, zara1, zara2, univ] for ETH-univ, ETH-hotel, UCY-zara01, UCY-zara02, UCY-univ')
